@@ -1,0 +1,29 @@
+{
+  "name": "@rdf-link/vocabulary",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "types": "./dist/mod.d.ts",
+  "exports": {
+    ".": "./dist/mod.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "ISC",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdf-link/vocabulary.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rdf-link/vocabulary/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
