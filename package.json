@@ -1,7 +1,7 @@
 {
   "name": "@rdf-link/vocabulary",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "RDF vocabularies",
   "type": "module",
   "types": "./dist/mod.d.ts",
   "exports": {

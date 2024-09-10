@@ -1,0 +1,27 @@
+import { RDF as RDF_NS } from "../ns/mod.js"
+
+export const RDF = {
+  Alt: RDF_NS.iri.concat("Alt"),
+  Bag: RDF_NS.iri.concat("Bag"),
+  CompoundLiteral: RDF_NS.iri.concat("CompoundLiteral"),
+  HTML: RDF_NS.iri.concat("HTML"),
+  JSON: RDF_NS.iri.concat("JSON"),
+  List: RDF_NS.iri.concat("List"),
+  PlainLiteral: RDF_NS.iri.concat("PlainLiteral"),
+  Property: RDF_NS.iri.concat("Property"),
+  Seq: RDF_NS.iri.concat("Seq"),
+  Statement: RDF_NS.iri.concat("Statement"),
+  XMLLiteral: RDF_NS.iri.concat("XMLLiteral"),
+  a: RDF_NS.iri.concat("type"),
+  direction: RDF_NS.iri.concat("direction"),
+  first: RDF_NS.iri.concat("first"),
+  langString: RDF_NS.iri.concat("langString"),
+  language: RDF_NS.iri.concat("language"),
+  nil: RDF_NS.iri.concat("nil"),
+  object: RDF_NS.iri.concat("object"),
+  predicate: RDF_NS.iri.concat("predicate"),
+  rest: RDF_NS.iri.concat("rest"),
+  subject: RDF_NS.iri.concat("subject"),
+  type: RDF_NS.iri.concat("type"),
+  value: RDF_NS.iri.concat("value"),
+}

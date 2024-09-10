@@ -1,7 +1,8 @@
-export type { INamespace } from "./i_namespace.js";
-export type { IVocabulary } from "./i_vocabulary.js";
+// Types
+export type { INamespace } from "./ns/i_namespace.js";
 
-export { OWL } from "./owl.js";
-export { RDF } from "./rdf.js";
-export { RDFS } from "./rdfs.js";
-export { XSD } from "./xsd.js";
+// Namespaces
+export * as NS from "./ns/mod.js";
+
+// Core RDF vocabularies
+export { OWL, RDF, RDFS, XSD } from "./core/mod.js";
