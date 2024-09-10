@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": null,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node",
+    "sourceMap": false,
+    "sourceRoot": null,
+    "declaration": false
+  },
+  "include": [
+    "."
+  ]
+}
