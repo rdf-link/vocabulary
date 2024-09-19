@@ -11,7 +11,8 @@
   "type": "module",
   "types": "./dist/mod.d.ts",
   "exports": {
-    ".": "./dist/mod.js"
+    ".": "./dist/mod.js",
+    "./core": "./dist/core/mod.js"
   },
   "files": [
     "dist"

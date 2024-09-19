@@ -1,7 +1,7 @@
 import assert from "node:assert";
 import { describe, it } from "node:test";
 
-import { RDF, RDFS, OWL, XSD } from "@rdf-link/vocabulary";
+import { RDF, RDFS, OWL, XSD } from "@rdf-link/vocabulary/core";
 
 describe("Core vocabularies", async () => {
     it("RDF has 23 terms", () => {

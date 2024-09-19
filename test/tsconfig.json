@@ -7,7 +7,8 @@
     "sourceRoot": null,
     "declaration": false,
     "paths": {
-      "@rdf-link/vocabulary": ["../src/mod.ts"]
+      "@rdf-link/vocabulary": ["../dist/mod.d.ts"],
+      "@rdf-link/vocabulary/core": ["../dist/core/mod.d.ts"]
     }
   },
   "include": [
