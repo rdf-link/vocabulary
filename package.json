@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "tsc -p test && node --test './test/**/*.test.js'"
+    "test": "tsc -p test && node --test"
   },
   "devDependencies": {
     "@types/node": "^22.5.5",
