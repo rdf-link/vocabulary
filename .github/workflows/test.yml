@@ -1,0 +1,22 @@
+name: Publish Package
+
+on:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+        node_version: [lts, lts/-1, lts/-2]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node_version }}
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
