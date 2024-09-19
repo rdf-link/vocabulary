@@ -2,6 +2,12 @@
   "name": "@rdf-link/vocabulary",
   "version": "0.0.3",
   "description": "RDF vocabularies",
+  "license": "MIT",
+  "homepage": "https://github.com/rdf-link/vocabulary#readme",
+  "repository": "git@github.com:rdf-link/vocabulary.git",
+  "bugs": {
+    "url": "https://github.com/rdf-link/vocabulary/issues"
+  },
   "type": "module",
   "types": "./dist/mod.d.ts",
   "exports": {
@@ -10,21 +16,12 @@
   "files": [
     "dist"
   ],
-  "license": "MIT",
-  "author": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rdf-link/vocabulary.git"
-  },
-  "bugs": {
-    "url": "https://github.com/rdf-link/vocabulary/issues"
-  },
   "scripts": {
     "build": "tsc",
-    "test": "tsc -p test && node --test"
+    "test": "tsc -p test && node --test './test/**/*.test.js'"
   },
   "devDependencies": {
-    "@types/node": "^22.5.4",
-    "typescript": "^5.5.4"
+    "@types/node": "^22.5.5",
+    "typescript": "^5.6.2"
   }
 }

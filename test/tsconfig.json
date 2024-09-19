@@ -1,11 +1,14 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "outDir": null,
+    "outDir": "dist",
     "allowSyntheticDefaultImports": true,
     "sourceMap": false,
     "sourceRoot": null,
-    "declaration": false
+    "declaration": false,
+    "paths": {
+      "@rdf-link/vocabulary": ["../src/mod.ts"]
+    }
   },
   "include": [
     "."
