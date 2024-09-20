@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
     "outDir": "dist",
+    "rootDir": "src",
     "target": "ES2022",
     "lib": ["ES2022", "DOM"],
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "strict": true,
     "sourceMap": true,
-    "sourceRoot": "https://github.com/rdf-link/vocabulary/tree/main/src/",
     "declaration": true
   },
   "include": ["src/mod.ts"]

@@ -19,7 +19,9 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "tsc -p test && node --test"
+    "build:test": "tsc -p test",
+    "clean": "rm -rf ./test/dist ./dist ./node_modules",
+    "test": "npm run build:test && node --test"
   },
   "devDependencies": {
     "@types/node": "^22.5.5",
