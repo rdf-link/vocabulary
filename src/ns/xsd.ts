@@ -1,6 +1,9 @@
-import type { INamespace } from "./i_namespace.js";
+import type { INamespace } from "../type/i_namespace.js";
 
-export const XSD: INamespace = {
+import { XSD as XSDVocabulary } from "../core/xsd.js";
+
+export const XSD: INamespace<"http://www.w3.org/2001/XMLSchema#", typeof XSDVocabulary> = {
   iri: "http://www.w3.org/2001/XMLSchema#",
-  prefix: "xsd"
+  prefix: "xsd",
+  terms: XSDVocabulary
 }
