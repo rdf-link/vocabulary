@@ -1,6 +1,6 @@
 {
   "name": "@rdf-link/vocabulary",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "RDF vocabularies",
   "license": "MIT",
   "homepage": "https://github.com/rdf-link/vocabulary#readme",
@@ -12,7 +12,7 @@
     "rdf",
     "vocabulary",
     "linked data",
-    "ontology", 
+    "ontology",
     "semantic web"
   ],
   "type": "module",
