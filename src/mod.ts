@@ -6,4 +6,7 @@ export type { IVocabulary } from "./type/i_vocabulary.js";
 export * as NS from "./ns/mod.js";
 
 // Core RDF vocabularies
-export { OWL, RDF, RDFS, XSD } from "./core/mod.js";
+export * from "./core/mod.js";
+
+// Utils
+export * from "./utils/mod.js"

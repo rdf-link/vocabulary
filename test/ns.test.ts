@@ -1,7 +1,7 @@
 import assert from "node:assert";
 import { describe, it } from "node:test";
 
-import { NS } from "@rdf-link/vocabulary";
+import * as NS from "@rdf-link/vocabulary/ns";
 
 describe("NS", async () => {
     it("has core RDF vocabulary", () => {
