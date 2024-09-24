@@ -8,6 +8,13 @@
   "bugs": {
     "url": "https://github.com/rdf-link/vocabulary/issues"
   },
+  "keywords": [
+    "rdf",
+    "vocabulary",
+    "linked data",
+    "ontology", 
+    "semantic web"
+  ],
   "type": "module",
   "types": "./dist/mod.d.ts",
   "exports": {
@@ -26,7 +33,7 @@
     "test": "npm run build:test && node --test"
   },
   "devDependencies": {
-    "@types/node": "^22.5.5",
+    "@types/node": "^22.6.1",
     "typescript": "^5.6.2"
   }
 }
