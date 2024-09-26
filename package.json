@@ -31,10 +31,10 @@
     "build": "tsc",
     "build:test": "tsc -p test",
     "clean": "rm -rf ./test/dist ./dist ./node_modules",
-    "test": "npm run build:test && node --test --experimental-test-coverage --test-reporter=spec"
+    "test": "npm run build && npm run build:test && node --test --experimental-test-coverage --test-reporter=spec"
   },
   "devDependencies": {
-    "@types/node": "^22.6.1",
+    "@types/node": "^22.7.2",
     "typescript": "^5.6.2"
   }
 }
