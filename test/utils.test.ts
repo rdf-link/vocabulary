@@ -10,7 +10,7 @@ describe("Utils", async () => {
         })
     
         it("has RDF defined Literal Datatypes", () => {
-            assert.equal(Object.keys(DATATYPE.RDF).length, 5);
+            assert.equal(Object.keys(DATATYPE.RDF).length, 6);
         })
     
         it("has XSD defined Literal Datatypes", () => {

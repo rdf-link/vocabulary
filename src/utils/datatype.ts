@@ -2,6 +2,7 @@ export const DATATYPE = {
   RDF: {
     HTML: "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML",
     JSON: "http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON",
+    langString: "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
     CompoundLiteral: "http://www.w3.org/1999/02/22-rdf-syntax-ns#CompoundLiteral",
     PlainLiteral: "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
     XMLLiteral: "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral",
@@ -48,5 +49,3 @@ export const DATATYPE = {
     NCName: "http://www.w3.org/2001/XMLSchema#NCName",
   }
 } as const;
-
-export const DEFAULT_DATATYPE = "http://www.w3.org/2001/XMLSchema#string";
