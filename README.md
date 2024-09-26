@@ -41,7 +41,7 @@ console.log(NS.RDFS.label);
 
 ## Utils
 
-The `DATATYPE` constant is a collection of [RDF datatypes](https://www.w3.org/TR/rdf11-concepts/#section-Datatypes), the `DEFAULT_DATATYPE` constant is the default datatype for RDF literals.
+The `DATATYPE` constant is a collection of [RDF datatypes](https://www.w3.org/TR/rdf11-concepts/#section-Datatypes) and the `DEFAULT_DATATYPE` constant is the default datatype for RDF literals.
 
 ```ts
 import { DATATYPE, DEFAULT_DATATYPE } from "@rdf-link/vocabulary/utils";
