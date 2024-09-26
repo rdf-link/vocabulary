@@ -1,10 +1,13 @@
-# RDF Vocabularies
+# RDF Vocabulary
 
 [![CI](https://github.com/rdf-link/vocabulary/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/rdf-link/vocabulary/actions/workflows/ci.yml?query=workflow%3ACI+branch%3Amain)
 [![MIT license](https://img.shields.io/npm/l/@rdf-link/vocabulary)](https://github.com/rdf-link/vocabulary/blob/main/LICENSE)
 [![npm version](https://img.shields.io/npm/v/@rdf-link/vocabulary)](https://www.npmjs.com/package/@rdf-link/vocabulary)
 
-A JavaScript module giving access to well-known RDF vocbularies' terms as constants.
+The `@rdf-link/vocabulary` JavaScript library:
+- gives access to well-known RDF vocbularies' terms as constants;
+- defines namespaces' base IRIs and commonly used prefixes;
+- bundles type declarations developed for convenient code completion.
 
 ## Core vocabularies
 
@@ -38,8 +41,14 @@ console.log(NS.RDFS.label);
 
 ## Utils
 
-The `DATATYPE` constant is a collection of [RDF datatypes](https://www.w3.org/TR/rdf11-concepts/#section-Datatypes), the `DEFAULT_DATATYPE` constant is the default datatype for RDF literals (`http://www.w3.org/2001/XMLSchema#string`).
+The `DATATYPE` constant is a collection of [RDF datatypes](https://www.w3.org/TR/rdf11-concepts/#section-Datatypes), the `DEFAULT_DATATYPE` constant is the default datatype for RDF literals.
 
 ```ts
 import { DATATYPE, DEFAULT_DATATYPE } from "@rdf-link/vocabulary/utils";
+
+// Logs: http://www.w3.org/1999/02/22-rdf-syntax-ns#langString
+console.log(DATATYPE.RDF.langString)
+
+// Logs: http://www.w3.org/2001/XMLSchema#string
+console.log(DEFAULT_DATATYPE)
 ```
