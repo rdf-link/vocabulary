@@ -31,21 +31,19 @@ console.log(FOAF.knows);
 
 ## Namespaces
 
-A namespace has a base IRI, associated prefix and terms.
-
-The NS module contains all vocabularies available in this library.
+The `ns` module contains all vocabularies available in this library each with associated base IRI, prefix and terms.
 
 ```ts
 import * as NS from "@rdf-link/vocabulary/ns";
 
-// Logs: rdfs
-console.log(NS.RDFS.prefix);
-
 // Logs: http://www.w3.org/2000/01/rdf-schema#
 console.log(NS.RDFS.iri);
 
+// Logs: rdfs
+console.log(NS.RDFS.prefix);
+
 // Logs: http://www.w3.org/2000/01/rdf-schema#label
-console.log(NS.RDFS.label);
+console.log(NS.RDFS.terms.label);
 ```
 
 ## Utils
@@ -61,3 +59,24 @@ console.log(DATATYPE.RDF.langString)
 // Logs: http://www.w3.org/2001/XMLSchema#string
 console.log(DEFAULT_DATATYPE)
 ```
+
+## Type definitions
+
+A vocabulary is a Record where keys are strings and corresponding values are the key prefixed by the vocabulary's base IRI.
+
+```ts
+export type IVocabulary<BaseIri extends string> = {
+    [K in string]: `${BaseIri}${K}`
+}
+```
+
+A namespace has a base IRI, an associated prefix (by convention for [abbreviated IRI form](https://www.w3.org/TR/rdf11-concepts/#vocabularies)) and terms.
+
+```ts
+export interface INamespace<BaseIri extends string, Vocabulary extends IVocabulary<BaseIri>> {
+    iri: BaseIri;
+    prefix: string;
+    terms: Vocabulary;
+}
+```
+
