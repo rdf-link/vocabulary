@@ -5,7 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/@rdf-link/vocabulary)](https://www.npmjs.com/package/@rdf-link/vocabulary)
 
 The `@rdf-link/vocabulary` JavaScript library:
-- gives access to well-known RDF vocbularies' terms as constants;
+- gives access to well-known RDF vocabularies' terms as constants;
 - defines namespaces' base IRIs and commonly used prefixes;
 - bundles type declarations developed for convenient code completion.
 
@@ -52,3 +52,7 @@ console.log(DATATYPE.RDF.langString)
 // Logs: http://www.w3.org/2001/XMLSchema#string
 console.log(DEFAULT_DATATYPE)
 ```
+
+## Other vocabularies
+
+The other module contains the FOAF (stable) vocabulary.
