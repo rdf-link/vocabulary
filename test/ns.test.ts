@@ -27,4 +27,10 @@ describe("NS", async () => {
         assert.equal(NS.XSD.prefix, "xsd");
         assert.equal(Object.keys(NS.XSD.terms).length, 39);
     })
+
+    it("has FOAF stable vocabulary", () => {
+        assert.equal(NS.FOAF.iri, "http://xmlns.com/foaf/0.1/");
+        assert.equal(NS.FOAF.prefix, "foaf");
+        assert.equal(Object.keys(NS.FOAF.terms).length, 16);
+    })
 })
