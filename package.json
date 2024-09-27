@@ -1,6 +1,6 @@
 {
   "name": "@rdf-link/vocabulary",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "RDF vocabularies",
   "license": "MIT",
   "homepage": "https://github.com/rdf-link/vocabulary#readme",
