@@ -9,15 +9,24 @@ The `@rdf-link/vocabulary` JavaScript library:
 - defines namespaces' base IRIs and commonly used prefixes;
 - bundles type declarations developed for convenient code completion.
 
-## Core vocabularies
+## Vocabularies
 
-The core module contains the RDF, RDFS, OWL and XSD vocabularies.
+The `core` module contains the RDF, RDFS, OWL and XSD vocabularies.
 
 ```ts
 import { RDF, RDFS, OWL, XSD } from "@rdf-link/vocabulary/core";
 
 // Logs: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
 console.log(RDF.type);
+```
+
+The `other` module contains the FOAF (stable) vocabulary.
+
+```ts
+import { FOAF } from "@rdf-link/vocabulary/other";
+
+// Logs: http://xmlns.com/foaf/0.1/knows
+console.log(FOAF.knows);
 ```
 
 ## Namespaces
@@ -52,7 +61,3 @@ console.log(DATATYPE.RDF.langString)
 // Logs: http://www.w3.org/2001/XMLSchema#string
 console.log(DEFAULT_DATATYPE)
 ```
-
-## Other vocabularies
-
-The other module contains the FOAF (stable) vocabulary.
