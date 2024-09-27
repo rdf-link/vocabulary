@@ -21,6 +21,7 @@
     ".": "./dist/mod.js",
     "./core": "./dist/core/mod.js",
     "./ns": "./dist/ns/mod.js",
+    "./other": "./dist/other/mod.js",
     "./utils": "./dist/utils/mod.js"
   },
   "files": [

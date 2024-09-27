@@ -9,6 +9,7 @@
       "@rdf-link/vocabulary": ["../dist/mod.d.ts"],
       "@rdf-link/vocabulary/core": ["../dist/core/mod.d.ts"],
       "@rdf-link/vocabulary/ns": ["../dist/ns/mod.d.ts"],
+      "@rdf-link/vocabulary/other": ["../dist/other/mod.d.ts"],
       "@rdf-link/vocabulary/utils": ["../dist/utils/mod.d.ts"]
     }
   },
