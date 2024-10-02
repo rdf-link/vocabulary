@@ -29,6 +29,15 @@ import { FOAF } from "@rdf-link/vocabulary/other";
 console.log(FOAF.knows);
 ```
 
+The `w3` module contains the SKOS vocabulary.
+
+```ts
+import { SKOS } from "@rdf-link/vocabulary/w3";
+
+// Logs: http://www.w3.org/2004/02/skos/core#broader
+console.log(SKOS.broader);
+```
+
 ## Namespaces
 
 The `ns` module contains all vocabularies available in this library each with associated base IRI, prefix and terms.
