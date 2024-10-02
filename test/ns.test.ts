@@ -33,4 +33,10 @@ describe("NS", async () => {
         assert.equal(NS.FOAF.prefix, "foaf");
         assert.equal(Object.keys(NS.FOAF.terms).length, 16);
     })
+
+    it("has SKOS vocabulary", () => {
+        assert.equal(NS.SKOS.iri, "http://www.w3.org/2004/02/skos/core#");
+        assert.equal(NS.SKOS.prefix, "skos");
+        assert.equal(Object.keys(NS.SKOS.terms).length, 32);
+    })
 })

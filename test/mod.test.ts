@@ -1,11 +1,11 @@
 import assert from "node:assert";
 import { describe, it } from "node:test";
 
-import { NS, RDF, RDFS, OWL, XSD, FOAF, DATATYPE, DEFAULT_DATATYPE } from "@rdf-link/vocabulary";
+import { NS, RDF, RDFS, OWL, XSD, FOAF, SKOS, DATATYPE, DEFAULT_DATATYPE } from "@rdf-link/vocabulary";
 
 describe("@rdf-link/vocabulary", async () => {
     it("exports NS", () => {
-        assert.equal(Object.keys(NS).length, 5);
+        assert.equal(Object.keys(NS).length, 6);
     })
 
     it("exports core vocabularies", () => {
@@ -17,6 +17,10 @@ describe("@rdf-link/vocabulary", async () => {
 
     it("export other vocabularies", () => {
         assert.equal(Object.keys(FOAF).length, 16);
+    })
+
+    it("export w3 vocabularies", () => {
+        assert.equal(Object.keys(SKOS).length, 32);
     })
 
     it("exports datatype and default datatype utils", () => {

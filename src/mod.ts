@@ -8,6 +8,9 @@ export * as NS from "./ns/mod.js";
 // Core RDF vocabularies
 export * from "./core/mod.js";
 
+// W3C RDF vocabularies
+export * from "./w3/mod.js"
+
 // Other RDF vocabularies
 export * from "./other/mod.js"
 

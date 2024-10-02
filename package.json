@@ -22,7 +22,8 @@
     "./core": "./dist/core/mod.js",
     "./ns": "./dist/ns/mod.js",
     "./other": "./dist/other/mod.js",
-    "./utils": "./dist/utils/mod.js"
+    "./utils": "./dist/utils/mod.js",
+    "./w3": "./dist/w3/mod.js"
   },
   "files": [
     "dist",
@@ -35,7 +36,7 @@
     "test": "npm run build && npm run build:test && node --test --experimental-test-coverage --test-reporter=spec"
   },
   "devDependencies": {
-    "@types/node": "^22.7.2",
+    "@types/node": "^22.7.4",
     "typescript": "^5.6.2"
   }
 }
