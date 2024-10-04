@@ -1,9 +1,13 @@
 import assert from "node:assert";
 import { describe, it } from "node:test";
 
-import { SKOS, SKOSXL } from "@rdf-link/vocabulary/w3";
+import { EARL, SKOS, SKOSXL } from "@rdf-link/vocabulary/w3";
 
 describe("W3 vocabularies", async () => {
+    it("EARL has 34 terms", () => {
+        assert.equal(Object.keys(EARL).length, 34);
+    })
+
     it("SKOS has 32 terms", () => {
         assert.equal(Object.keys(SKOS).length, 32);
     })
