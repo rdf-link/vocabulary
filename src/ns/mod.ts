@@ -5,4 +5,5 @@ export * from "./rdf.js";
 export * from "./rdfs.js";
 export * from "./skos.js";
 export * from "./skosxl.js";
+export * from "./vcard.js";
 export * from "./xsd.js";

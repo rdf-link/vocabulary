@@ -45,4 +45,10 @@ describe("NS", async () => {
         assert.equal(NS.SKOSXL.prefix, "skosxl");
         assert.equal(Object.keys(NS.SKOSXL.terms).length, 6);
     })
+
+    it("has VCARD vocabulary", () => {
+        assert.equal(NS.VCARD.iri, "http://www.w3.org/2006/vcard/ns#");
+        assert.equal(NS.VCARD.prefix, "vcard");
+        assert.equal(Object.keys(NS.VCARD.terms).length, 93);
+    })
 })

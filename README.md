@@ -29,10 +29,10 @@ import { FOAF } from "@rdf-link/vocabulary/other";
 console.log(FOAF.knows);
 ```
 
-The `w3` module contains the EARL, SKOS and SKOSXL vocabularies.
+The `w3` module contains the EARL, SKOS, SKOSXL and VCARD vocabularies.
 
 ```ts
-import { EARL, SKOS, SKOSXL } from "@rdf-link/vocabulary/w3";
+import { EARL, SKOS, SKOSXL, VCARD } from "@rdf-link/vocabulary/w3";
 
 // Logs: http://www.w3.org/2004/02/skos/core#broader
 console.log(SKOS.broader);

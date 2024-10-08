@@ -1,7 +1,7 @@
 import assert from "node:assert";
 import { describe, it } from "node:test";
 
-import { EARL, SKOS, SKOSXL } from "@rdf-link/vocabulary/w3";
+import { EARL, SKOS, SKOSXL, VCARD } from "@rdf-link/vocabulary/w3";
 
 describe("W3 vocabularies", async () => {
     it("EARL has 34 terms", () => {
@@ -14,5 +14,9 @@ describe("W3 vocabularies", async () => {
 
     it("SKOSXL has 6 terms", () => {
         assert.equal(Object.keys(SKOSXL).length, 6);
+    })
+
+    it("VCARD has 93 terms", () => {
+        assert.equal(Object.keys(VCARD).length, 93);
     })
 })
