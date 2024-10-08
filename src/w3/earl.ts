@@ -1,13 +1,6 @@
+// See also: https://www.w3.org/TR/EARL10-Schema/
 export const EARL = {
-    assertedBy: "http://www.w3.org/ns/earl#assertedBy",
-    mainAssertor: "http://www.w3.org/ns/earl#mainAssertor",
-    info: "http://www.w3.org/ns/earl#info",
-    mode: "http://www.w3.org/ns/earl#mode",
-    outcome: "http://www.w3.org/ns/earl#outcome",
-    pointer: "http://www.w3.org/ns/earl#pointer",
-    result: "http://www.w3.org/ns/earl#result",
-    subject: "http://www.w3.org/ns/earl#subject",
-    test: "http://www.w3.org/ns/earl#test",
+    // Classes
     Assertion: "http://www.w3.org/ns/earl#Assertion",
     Assertor: "http://www.w3.org/ns/earl#Assertor",
     CannotTell: "http://www.w3.org/ns/earl#CannotTell",
@@ -23,6 +16,16 @@ export const EARL = {
     TestRequirement: "http://www.w3.org/ns/earl#TestRequirement",
     TestResult: "http://www.w3.org/ns/earl#TestResult",
     TestSubject: "http://www.w3.org/ns/earl#TestSubject",
+    // Properties
+    assertedBy: "http://www.w3.org/ns/earl#assertedBy",
+    info: "http://www.w3.org/ns/earl#info",
+    mainAssertor: "http://www.w3.org/ns/earl#mainAssertor",
+    mode: "http://www.w3.org/ns/earl#mode",
+    outcome: "http://www.w3.org/ns/earl#outcome",
+    pointer: "http://www.w3.org/ns/earl#pointer",
+    result: "http://www.w3.org/ns/earl#result",
+    subject: "http://www.w3.org/ns/earl#subject",
+    test: "http://www.w3.org/ns/earl#test",
     // Instances of TestMode
     automatic: "http://www.w3.org/ns/earl#automatic",
     manual: "http://www.w3.org/ns/earl#manual",

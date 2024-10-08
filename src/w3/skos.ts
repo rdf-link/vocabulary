@@ -1,8 +1,11 @@
+// See also: https://www.w3.org/TR/skos-reference/
 export const SKOS = {
+    // Classes
     Collection: "http://www.w3.org/2004/02/skos/core#Collection",
     Concept: "http://www.w3.org/2004/02/skos/core#Concept",
     ConceptScheme: "http://www.w3.org/2004/02/skos/core#ConceptScheme",
     OrderedCollection: "http://www.w3.org/2004/02/skos/core#OrderedCollection",
+    // Properties
     altLabel: "http://www.w3.org/2004/02/skos/core#altLabel",
     broader: "http://www.w3.org/2004/02/skos/core#broader",
     broaderTransitive: "http://www.w3.org/2004/02/skos/core#broaderTransitive",
